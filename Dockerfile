@@ -18,7 +18,7 @@ RUN ln -s /etc/nginx/sites-available/laravel /etc/nginx/sites-enabled/laravel &&
 ADD config/nginx-start.sh /opt/bin/nginx-start.sh
 RUN chmod u=rwx /opt/bin/nginx-start.sh
 
-RUN mkdir -p /data
+RUN mkdir -p /data/logs
 VOLUME ["/data"]
 
 # PORTS
