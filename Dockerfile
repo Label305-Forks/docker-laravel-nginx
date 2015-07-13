@@ -19,6 +19,7 @@ ADD config/nginx-start.sh /opt/bin/nginx-start.sh
 RUN chmod u=rwx /opt/bin/nginx-start.sh
 
 RUN mkdir -p /data/logs
+RUN touch /data/logs/access.log
 VOLUME ["/data"]
 
 # PORTS
